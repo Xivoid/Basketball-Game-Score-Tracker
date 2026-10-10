@@ -1,9 +1,11 @@
 body {
-    background-image: url("4K BG.jpg");
+    background-color: #1a1030;
+    background-image: url("bg-4k.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
-    height: 100vh;         
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;         
     margin: 0;                     
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
