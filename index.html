@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basketball Scoreboard</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Basketball Scoreboard</h1>
+            
+            <div class="scoreboard">
+                <!-- Home Team Section -->
+                <div class="team">
+                    <h2>HOME</h2>
+                    <div id="home-score" class="score-display">0</div>
+                    <div class="button-group">
+                        <button onclick="homeScore(1)">+1</button>
+                        <button onclick="homeScore(2)">+2</button>
+                        <button onclick="homeScore(3)">+3</button>
+                    </div>
+                </div>
+
+                <!-- Guest Team Section -->
+                <div class="team">
+                    <h2>GUEST</h2>
+                    <div id="guest-score" class="score-display">0</div>
+                    <div class="button-group">
+                        <button onclick="guestScore(1)">+1</button>
+                        <button onclick="guestScore(2)">+2</button>
+                        <button onclick="guestScore(3)">+3</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Rematch Button Section -->
+            <div class="rematch-container">
+                <button id="rematch-btn" onclick="resetGame()">Rematch</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    background-image: url("4K BG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh;         
+    margin: 0;                     
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #1b1b1b; /* Darker stadium/scoreboard housing background */
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 600px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+/* This puts Home and Guest side-by-side */
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.team h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Makes the score look like a digital scoreboard display */
+.score-display {
+    background: black;
+    color: #F94F6D; /* Classic LED red-orange scoreboard color */
+    font-size: 70px;
+    font-family: monospace; /* Gives it that digital scoreboard feel */
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: 3px solid #333;
+    margin-bottom: 20px;
+    min-width: 80px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+button {
+    border: none;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+    background: #2b6cb0; /* Nice sporty blue for point buttons */
+}
+
+button:hover {
+    filter: brightness(115%);
+}
+/* Add this to your existing styles.css */
+
+.rematch-container {
+    margin-top: 25px;
+}
+
+#rematch-btn {
+    background: #e28743; /* Distinct orange color for reset/rematch */
+    width: 150px;
+    padding: 12px 0;
+    font-size: 16px;
+}
